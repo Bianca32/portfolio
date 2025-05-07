@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andreara MediaWorks</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Degradê animado no fundo */
+        body {
+            background: linear-gradient(135deg, #b0e0e6, #fadadd, #a7dbd8);
+            background-size: 400% 400%;
+            animation: gradient 10s ease infinite;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.8); /* Navbar translúcida */
+            padding: 15px 0;
+            backdrop-filter: blur(10px);
+        }
+
+        .banner {
+            padding: 80px 0;
+            color: #333;
+        }
+
+        .banner h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+
+        .banner .lead {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn-lg {
+            background-color: #4682B4;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-lg:hover {
+            background-color: #5A9BD5;
+        }
+
+        .container {
+            max-width: 1000px;
+        }
+
+        /* Estilizando a seção de serviços com cartões */
+        .services {
+            margin-top: 50px;
+        }
+
+        .services .card {
+            border: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .services .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .services .card h5 {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .services .card i {
+            font-size: 3rem;
+            color: #4682B4;
+            margin-bottom: 15px;
+        }
+
+        /* Footer mais escuro com melhor contraste */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .logo {
+            width: 200px;
+            margin: 20px auto;
+            display: block;
+        }
+
+        /* Animação suave ao rolar */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease-out;
+        }
+
+        .fade-in.appear {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Andreara MediaWorks</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre Mim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfólio</a></li>
+					<li class="nav-item"><a class="nav-link" href="Contato.html">Entre em contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="banner text-center">
+        <div class="container">
+            <img src="logo.png" alt="Logo" class="logo">
+            <h1>Seja Bem-vindo ao Meu Universo Criativo!</h1>
+            <p class="lead">Ajudo empresas a destacarem suas marcas com design e marketing digital.</p>
+			 <p class="lead">Aqui, transformar ideias em experiências visuais autênticas e poderosas é a nossa especialidade. 
+			 Sou Andreara Bianca Petzinger, gaúcha, mãe de dois meninos e com um toque criativo e muito know-how,
+			 ajuda marcas e empreendedores a conquistarem destaque com conteúdo que encanta e engaja.</p>
+            <a href="portfolio.html" class="btn btn-lg">Conheça Meu Portfólio</a>
+        </div>
+    </section>
+
+<section class="container services mt-5">
+    <h2 class="text-center mb-5">Andreara MediaWorks: Estratégia, Design e Resultados</h2>
+    <div class="row">
+        <div class="col-md-3 fade-in">
+            <div class="card text-center p-4">
+                <i class="bi bi-palette-fill"></i>
+                <h5>Design de Marca</h5>
+                <p>Criação de logotipos personalizados, identidade visual e branding estratégico para que cada elemento de sua marca seja coincidente e alinhado ao seu propósito.</p>
+            </div>
+        </div>
+        <div class="col-md-3 fade-in">
+            <div class="card text-center p-4">
+                <i class="bi bi-chat-square-text-fill"></i>
+                <h5>Gestão de Redes Sociais</h5>
+                <p>Desde o planejamento ao pós-final, desenvolvemos estratégias focadas em resultados, com conteúdo que cria conexão verdadeira com o público e impulsiona o crescimento.</p>
+            </div>
+        </div>
+        <div class="col-md-3 fade-in">
+            <div class="card text-center p-4">
+                <i class="bi bi-lightbulb-fill"></i>
+                <h5>Consultoria de Marketing</h5>
+                <p>Orientação personalizada para tirar o máximo proveito das redes sociais e das melhores práticas digitais, sempre atualizadas para você liderar em sua área.</p>
+            </div>
+        </div>
+        <div class="col-md-3 fade-in">
+            <div class="card text-center p-4">
+                <i class="bi bi-play-circle-fill"></i>
+                <h5>Cursos e Tutoriais</h5>
+                <p>Quer aprender a se destacar no Canva ou dominar a criação de conteúdo digital? Abordagem prática e descontraída para aplicar técnicas que fazem a diferença.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Texto de encerramento -->
+<section class="container mt-5">
+    <h2 class="text-center mb-3">Seja qual for o seu projeto, trago à mesa criatividade, inovação e uma abordagem 
+        feita para transformar sua visão em realidade. Vamos juntos construir uma marca que se comunique, 
+        se conecte e faça acontecer!
+    </h2>
+</section>
+
+
+
+
+    <section class="container mt-5">
+        <h2 class="text-center">Criar Ideia</h2>
+        <form action="index.php" method="POST">
+            <div class="mb-3">
+                <label for="cliente" class="form-label">Nome do Cliente</label>
+                <input type="text" class="form-control" id="cliente" name="cliente" required>
+            </div>
+            <div class="mb-3">
+                <label for="data" class="form-label">Data da Criação "inicio"</label>
+                <input type="date" class="form-control" id="data" name="data" required>
+            </div>
+            <div class="mb-3">
+                <label for="servicos" class="form-label">Descrição dos Serviços</label>
+                <textarea class="form-control" id="servicos" name="servicos" rows="4" required></textarea>
+            </div>
+            <!--<div class="mb-3">
+                <label for="valor" class="form-label">Valor Total (R$)</label>
+                <input type="number" step="0.01" class="form-control" id="valor" name="valor" required>
+            </div>
+            <div class="mb-3">
+                <label for="pagamento" class="form-label">Forma de Pagamento</label>
+                <select class="form-select" id="pagamento" name="pagamento" required>
+                    <option value="Pix">Pix</option>
+                    <option value="Boleto">Boleto</option>
+                    <option value="Cartão (2x)">Cartão (2x)</option>
+                </select> -->
+            </div>
+            <button type="submit" class="btn btn-primary">Gerar </button>
+        </form>
+
+        <?php if ($_SERVER['REQUEST_METHOD'] == 'POST'): ?>
+            <hr class="my-5">
+            <h3 class="text-center">Gerado</h3>
+            <div class="border p-4">
+                <p><strong>Cliente:</strong> <?= htmlspecialchars($_POST['cliente']) ?></p>
+                <p><strong>Data:</strong> <?= htmlspecialchars($_POST['data']) ?></p>
+                <p><strong>Serviços:</strong></p>
+                <p><?= nl2br(htmlspecialchars($_POST['servicos'])) ?></p>
+                <p><strong>Valor Total:</strong> R$ <?= number_format($_POST['valor'], 2, ',', '.') ?></p>
+                <p><strong>Forma de Pagamento:</strong> <?= htmlspecialchars($_POST['pagamento']) ?></p>
+                <p class="text-muted">Este orçamento é válido por 5 dias.</p>
+            </div>
+        <?php endif; ?>
+    </section>
+
+    <footer class="text-center">
+        <p>&copy; 2024 Andreara MediaWorks - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Animação ao rolar a página
+        document.addEventListener("DOMContentLoaded", function() {
+            let elements = document.querySelectorAll('.fade-in');
+            window.addEventListener('scroll', function() {
+                elements.forEach(function(element) {
+                    if (window.scrollY + window.innerHeight > element.offsetTop + 50) {
+                        element.classList.add('appear');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

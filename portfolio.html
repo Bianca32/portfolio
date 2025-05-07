@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Andreara MediaWorks</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Gradiente de fundo semelhante ao seu design */
+        body {
+            background: linear-gradient(135deg, #b8e0f4, #f8d3e3, #d3f8e2);
+            background-size: 200% 200%;
+            animation: gradient 10s ease infinite;
+            color: #333;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        h2, h3 {
+            color: #555;
+        }
+
+        .portfolio img {
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 10px 0;
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+		
+		
+		.video-responsive {
+    width: 100%;
+    height: 200px; /* Altura fixa para padronizar */
+    object-fit: cover; /* Mantém a proporção sem distorcer */
+    border-radius: 8px; /* Opcional: bordas arredondadas para um design melhor */
+}
+
+}
+
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.php">Andreara MediaWorks</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre Mim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfólio</a></li>
+					<li class="nav-item"><a class="nav-link" href="Contato.html">Entre em contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--<nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Andreara MediaWorks</a>
+        </div>
+    </nav>-->
+
+    <section class="portfolio my-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Meu Portfólio</h2>
+            <div class="row">
+    <!-- Portfólio 1 a 3 -->
+    <div class="col-md-4 mb-4">
+        <img src="Novapasta/portfolio1.png" class="img-fluid" alt="Design 1">
+    </div>
+    <div class="col-md-4 mb-4">
+        <img src="Novapasta/portfolio2.png" class="img-fluid" alt="Design 2">
+    </div>
+    <div class="col-md-4 mb-4">
+        <img src="Novapasta/portfolio3.jpg" class="img-fluid" alt="Design 3">
+    </div>
+
+    <!-- Portfólio 4 a 6 -->
+    <div class="col-md-4 mb-4">
+        <img src="Novapasta/portfolio4.jpg" class="img-fluid" alt="Design 4">
+    </div>
+    <div class="col-md-4 mb-4">
+        <img src="Novapasta/portfolio5.jpg" class="img-fluid" alt="Design 5">
+    </div>
+    <div class="col-md-4 mb-4">
+        <img src="Novapasta/portfolio6.png" class="img-fluid" alt="Design 6">
+    </div>
+
+    <!-- Portfólio 7 a 9 -->
+    <div class="col-md-4 mb-4">
+        <img src="Novapasta/portfolio7.png" class="img-fluid" alt="Design 7">
+    </div>
+    <div class="col-md-4 mb-4">
+        <img src="Novapasta/portfolio8.png" class="img-fluid" alt="Design 8">
+    </div>
+    <div class="col-md-4 mb-4">
+        <img src="Novapasta/portfolio9.png" class="img-fluid" alt="Design 9">
+    </div>
+
+    <!-- Portfólio 10 a 12 -->
+    <div class="col-md-4 mb-4">
+        <img src="Novapasta/portfolio10.png" class="img-fluid" alt="Design 10">
+    </div>
+    <div class="col-md-4 mb-4">
+        <img src="Novapasta/portfolio11.png" class="img-fluid" alt="Design 11">
+    </div>
+    <div class="col-md-4 mb-4">
+        <img src="Novapasta/portfolio12.png" class="img-fluid" alt="Design 12">
+    </div>
+
+    <!-- Portfólio 13 a 15 -->
+    <div class="col-md-4 mb-4">
+        <img src="Novapasta/portfolio13.png" class="img-fluid" alt="Design 13">
+    </div>
+    <div class="col-md-4 mb-4">
+        <img src="Novapasta/portfolio14.png" class="img-fluid" alt="Design 14">
+    </div>
+    <div class="col-md-4 mb-4">
+        <img src="Novapasta/portfolio15.png" class="img-fluid" alt="Design 15">
+    </div>
+
+    <!-- Portfólio 16 a 18 -->
+    <div class="col-md-4 mb-4">
+        <img src="Novapasta/portfolio16.png" class="img-fluid" alt="Design 16">
+    </div>
+    <div class="col-md-4 mb-4">
+        <img src="Novapasta/portfolio17.png" class="img-fluid" alt="Design 17">
+    </div>
+    <div class="col-md-4 mb-4">
+        <img src="Novapasta/portfolio18.png" class="img-fluid" alt="Design 18">
+    </div>
+</div>
+
+
+            <h3 class="text-center mt-5">Vídeos</h3>
+            <div class="container text-center">
+    <div class="row">
+        <!-- Vídeo 1 -->
+        <div class="col-12 col-sm-6 col-md-4 mb-3">
+            <video controls class="video-responsive">
+                <source src="videos/Abertura Inovadora com IA_free.mp4" type="video/mp4">
+                Seu navegador não suporta vídeo.
+            </video>
+        </div>
+
+        <!-- Vídeo 2 -->
+        <div class="col-12 col-sm-6 col-md-4 mb-3">
+            <video controls class="video-responsive">
+                <source src="videos/Mensagem de feliz aniversário.mp4" type="video/mp4">
+                Seu navegador não suporta vídeo.
+            </video>
+        </div>
+
+        <!-- Vídeo 3 -->
+        <div class="col-12 col-sm-6 col-md-4 mb-3">
+            <video controls class="video-responsive">
+                <source src="videos/Dia das crianças brinquedos promoção vendas azul story.mp4" type="video/mp4">
+                Seu navegador não suporta vídeo.
+            </video>
+        </div>
+
+        <!-- Vídeo 4 -->
+        <div class="col-12 col-sm-6 col-md-4 mb-3">
+            <video controls class="video-responsive">
+                <source src="videos/exemplo.mp4" type="video/mp4">
+                Seu navegador não suporta vídeo.
+            </video>
+        </div>
+
+        <!-- Vídeo 5 -->
+        <div class="col-12 col-sm-6 col-md-4 mb-3">
+            <video controls class="video-responsive">
+                <source src="videos/exemplo1.mp4" type="video/mp4">
+                Seu navegador não suporta vídeo.
+            </video>
+        </div>
+
+   
+        <div class="col-12 col-sm-6 col-md-4 mb-3">
+            <video controls class="video-responsive">
+                <source src="videos/exemplo2.mp4" type="video/mp4">
+                Seu navegador não suporta vídeo.
+            </video>
+        </div>
+		 <div class="col-12 col-sm-6 col-md-4 mb-3">
+            <video controls class="video-responsive">
+                <source src="videos/exemplo3.mp4" type="video/mp4">
+                Seu navegador não suporta vídeo.
+            </video>
+        </div>
+		<div class="col-12 col-sm-6 col-md-4 mb-3">
+            <video controls class="video-responsive">
+                <source src="videos/exemplo4.mp4" type="video/mp4">
+                Seu navegador não suporta vídeo.
+            </video>
+        </div>
+		<div class="col-12 col-sm-6 col-md-4 mb-3">
+            <video controls class="video-responsive">
+                <source src="videos/exemplo5.mp4" type="video/mp4">
+                Seu navegador não suporta vídeo.
+            </video>
+        </div>
+		<div class="col-12 col-sm-6 col-md-4 mb-3">
+            <video controls class="video-responsive">
+                <source src="videos/Logodigital.mp4" type="video/mp4">
+                Seu navegador não suporta vídeo.
+            </video>
+        </div>
+    </div>
+</div>
+
+</div>
+
+        </div>
+    </section>
+
+    <footer class="text-center">
+        <p>&copy; 2024 Andreara MediaWorks - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim - Andreara MediaWorks</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Degradê de fundo com cores suaves */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, rgba(173,216,230,1) 0%, rgba(255,182,193,1) 50%, rgba(144,238,144,1) 100%);
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Estilo da barra de navegação */
+        nav.navbar {
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 15px 0;
+        }
+
+        nav.navbar .navbar-brand {
+            font-weight: 600;
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        h2, p {
+            color: #333;
+        }
+
+        /* Seção "Sobre Mim" com mais espaçamento */
+        section.about {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        section.about h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        section.about p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        footer {
+            margin-top: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px 0;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #00acee;
+        }
+
+        section.about, footer {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.6s ease-out;
+        }
+
+        section.about.appear, footer.appear {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (max-width: 768px) {
+            section.about h2 {
+                font-size: 2rem;
+            }
+
+            section.about p {
+                font-size: 1rem;
+                padding: 0 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.php">Andreara MediaWorks</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre Mim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfólio</a></li>
+					<li class="nav-item"><a class="nav-link" href="Contato.html">Entre em contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="about">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <p>
+                Bem-vindo à Andreara MediaWorks! Sou Andreara Bianca Petzinger, criadora de conteúdos digitais, comunicóloga e apaixonada por transformar ideias em projetos visuais impactantes. Com uma trajetória que une o amor pela comunicação, o domínio do design digital e a experiência em marketing e tecnologia, minha missão é ajudar marcas e empreendedores a se destacarem em suas redes sociais e atingirem seu potencial máximo.
+            </p>
+            <p>
+                Minha jornada no universo digital começou há mais de uma década, quando ainda atuava como corretora de imóveis e descobri no Photoshop uma ferramenta poderosa para transmitir emoções e atrair clientes. A partir desse ponto, nasceu uma paixão que me levou a me especializar em Comunicação Digital e a criar minha própria empresa, a Custoffice, onde junto com meu marido, ofereço soluções de TI e desenvolvimento de sistemas personalizados.
+            </p>
+            <p>
+                Agora, com a Andreara MediaWorks, trago essa experiência para um novo nível, focando na criação de conteúdos visuais dinâmicos e acessíveis. Desde posts e logotipos até estratégias de engajamento, estou aqui para desenvolver uma presença digital que combine autenticidade, modernidade e resultados.
+            </p>
+            <p>
+                Ao longo desses anos, tenho ajudado pequenos empreendedores e empresas a explorarem sua identidade e alcançarem um público fiel. Meu objetivo é fazer com que cada marca conte uma história e que cada post desperte uma conexão genuína.
+            </p>
+            <p>
+                Pronta para levar sua presença online a um novo patamar? Vamos trabalhar juntos e transformar a sua visão em uma marca que impacta.
+            </p>
+        </div>
+    </section>
+
+    <footer class="text-center">
+        <p>&copy; 2024 Andreara MediaWorks - Todos os direitos reservados</p>
+        <div class="social-icons">
+            <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let aboutSection = document.querySelector('section.about');
+            let footer = document.querySelector('footer');
+            window.addEventListener('scroll', function() {
+                let scrollPosition = window.scrollY + window.innerHeight;
+                if (scrollPosition > aboutSection.offsetTop) {
+                    aboutSection.classList.add('appear');
+                }
+                if (scrollPosition > footer.offsetTop) {
+                    footer.classList.add('appear');
+                }
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
+</body>
+</html>

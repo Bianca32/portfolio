@@ -1,0 +1,38 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+.navbar {
+    background-color: #4682b4;
+}
+.navbar-brand {
+    color: white;
+}
+.nav-link {
+    color: white;
+}
+.nav-link:hover {
+    color: #add8e6;
+}
+
+.banner {
+    background-color: #87ceeb;
+    padding: 100px 0;
+    color: white;
+}
+.banner h1 {
+    font-size: 3rem;
+}
+
+.portfolio img {
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #4682b4;
+    color: white;
+    padding: 10px 0;
+}
